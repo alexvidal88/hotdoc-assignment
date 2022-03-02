@@ -6,3 +6,6 @@
  # @returns {Number} The input doubled
 #
 
+def double_integer(integer)
+    integer*2
+end
