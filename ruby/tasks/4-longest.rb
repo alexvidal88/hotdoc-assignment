@@ -5,4 +5,12 @@
  # @param {Array} strings An array that might contain strings.
  # @returns {String} The longest string from within the input array.
 #
-
+def longest_string(strings)
+    longest_string = ""
+    strings.each do |string|
+        if (string.class == String) && (string.size > longest_string.size) 
+            longest_string = string
+        end 
+    end
+    longest_string
+end
