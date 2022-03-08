@@ -8,9 +8,7 @@
 def longest_string(strings)
     longest_string = ""
     strings.each do |string|
-        if (string.class == String) && (string.size > longest_string.size) 
-            longest_string = string
-        end 
+        string.class == String && string.size > longest_string.size ? longest_string = string : nil    
     end
     longest_string
 end

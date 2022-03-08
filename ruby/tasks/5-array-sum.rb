@@ -8,9 +8,7 @@
 def array_sum(start_of_tree)
     sum = 0
     start_of_tree.flatten.each do |element|
-        if element.class == Integer
-            sum += element
-        end  
+        element.class == Integer ? sum += element : nil
     end
     sum
 end
