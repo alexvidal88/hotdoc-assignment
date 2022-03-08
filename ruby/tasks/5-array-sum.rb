@@ -5,9 +5,9 @@
  # @param {Array} startOfTree An array containing other arrays, ints, strings..
  # @returns {Number} The sum of all integers contained in the input, at any level.
 #
-def array_sum(start_of_tree)
+def array_sum(startOfTree)
     sum = 0
-    start_of_tree.flatten.each do |element|
+    startOfTree.flatten.each do |element|
         element.class == Integer ? sum += element : nil
     end
     sum
